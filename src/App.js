@@ -22,7 +22,7 @@ export default function App() {
           <Route path='/company' element={<Company />} />          
           <Route path='/contact' element={<Contact />} />          
           <Route path='/newproject' element={<NewProject />} />          
-          <Route path='/orojects' element={<Projects />} />          
+          <Route path='/projects' element={<Projects />} />          
         </Routes>
       </Container>
       <Footer/>
