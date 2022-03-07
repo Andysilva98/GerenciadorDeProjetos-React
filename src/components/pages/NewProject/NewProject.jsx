@@ -19,9 +19,9 @@ export default function NewProject() {
             body: JSON.stringify(project), // manda os dados do project por POST na rota acima
         })
         .then(resp => resp.json())
-        .then(data => {
+        .then(() => {
             //redirect
-            navigate('/projects')
+            navigate('/projects', {message: 'Projeto cadastrado com sucesso'})
         })
         .catch(err => console.log(err))
     }
